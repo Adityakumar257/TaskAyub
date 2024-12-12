@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 0rem;
+    width: 40rem;
+}
+.card{
+    position: relative;
+    left: 0;
+    width: 3rem;
+    border-radius: 5rem;
+    height: 20rem;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    flex: .15;
+}
+.card img{
+    position: relative;
+    height: 20rem;
+    object-fit: cover;
+}
+.card:hover{
+    flex: 1 1 0;
+    cursor: pointer;
+    border-radius: 1rem;
+} 
+
+
+/* <div className='gallery'>
+<div className='card'>
+<img src='https://imgs.search.brave.com/OKq-c76FKuLMIl3O-x6OyWC4MN4_0VuSWsdv5lusgbM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saXZl/LnN0YXRpY2ZsaWNr/ci5jb20vNDY3OC8z/OTkxNTQ1MjU1Ml80/Y2RiZjE1OTA2Lmpw/Zw'/>
+</div>
+<div className='card'>
+<img src='https://imgs.search.brave.com/grSs9jCxNKjAmSARrCHZhpbPImBNDACTfW32bNOmL3w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Y3L2Q2/L2I2L2Y3ZDZiNjVm/MjA0ZjA1ZTk3N2Ni/YWViMmM5YTQ4ZWZl/LmpwZw'/>
+</div>
+<div className='card'>
+<img src='https://imgs.search.brave.com/i37vunCGbCxrUZr9XrZJrcakMLF7KaqVHHyXid6cpKM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9w/ZWFjZWZ1bC12aWV3/LW1vcm5pbmctbGln/aHRfMjMtMjE0ODg1/MTc2NS5qcGc_c2Vt/dD1haXNfaHlicmlk'/>
+</div>  
+</div> */
